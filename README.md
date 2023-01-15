@@ -1,4 +1,4 @@
-# mcdm-abtest
+# LDM-framework 
 This repository contains the code for LDM: a Launch Decision-Making framework that predicts launch decisions for online controlled experiments (a.k.a. A/B testing) using Multi-Criteria Decision-Making. 
 
 Please see more details in the following paper:
