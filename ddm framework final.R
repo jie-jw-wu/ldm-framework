@@ -220,7 +220,10 @@ get_results <- function(weight_methods, mcdm_methods, min_idx = 0, max_idx = 300
              impressions,
              #X1,
              winner,
-             first_place)
+             first_place,
+             test_week
+      ) %>% 
+      filter(!between(test_week, 201325, 201402)) # We need to remove the glitch reported by the dataset (rows between June 25, 2013 through Jan 10, 2014)
   
   reduced_data$click_rate <- reduced_data$clicks/reduced_data$impressions
   grouped_data <- reduced_data %>% arrange(desc(clickability_test_id))
@@ -331,7 +334,7 @@ plot_results_based_on_cross_validation <- function(weight_method, title) {
   names(cv_acc_stats) <- c("TOPSISLinear","TOPSISVector","MMOORA","VIKOR","WPM","WSM")
   
   size = 1000
-  fold_num = 21
+  fold_num = 18 # Was 21 before removing glitch. Sample size dropped from 22k downto 18k after removing glitch, i.e., removing rows between June 25, 2013 through Jan 10, 2014
   
   for (method in 1:6) {
     cv_result[[method]] <- rep(0,6)
