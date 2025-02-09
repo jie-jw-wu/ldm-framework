@@ -1,7 +1,7 @@
 # LDM-framework 
 This repository contains the code for LDM: a Launch Decision-Making framework that predicts launch decisions for online controlled experiments (a.k.a. A/B testing) using Multi-Criteria Decision-Making. 
 
-The pre-print PDF of the paper is included in the repository. Here is the SSRN link of the pre-print PDF: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4072566
+The pre-print PDF of the paper is included in the repository. Here is the link to the PDF: https://github.com/jie-jw-wu/ldm-framework/blob/main/1-s2.0-S0950584922002245-main.pdf (SSRN link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4072566)
 
 The formal publication is included in the reference below. 
 
